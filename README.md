@@ -4,13 +4,10 @@ Mysql(i) class
 <b>Klasa za rad sa MySql bazama.</b><br/>
 Citanje iz baze<br/><br/>
 <code>
-$db = new SQL ($host, $username, $password, $baza); // poziva klasu<br/>
-
-$uslov=$db->uslov("id=1"); 	// postavlja uslov<br/>
-
-$test=$db->procitaj("*","test","id"); // cita iz baze uz predhodno postavljen uslov, i na kraju ga ponistava<br/>
-
-$drugi= $db->procitaj("*","test","id"); // cita iz baze bez uslova<br/><br/>
+$db = new SQL ($host, $username, $password, $baza); // poziva klasu
+$uslov=$db->uslov("id=1"); 	// postavlja uslov
+$test=$db->procitaj("*","test","id"); // cita iz baze uz predhodno postavljen uslov, i na kraju ga ponistava
+$drugi= $db->procitaj("*","test","id"); // cita iz baze bez uslova
 </code>
 
 
