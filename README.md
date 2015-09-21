@@ -1,24 +1,28 @@
 # MySqli
 Mysql(i) class
 
-Klasa za rad sa MySql bazama.
-Citanje iz baze
+<b>Klasa za rad sa MySql bazama.</b><br/>
+Citanje iz baze<br/><br/>
 
-$db = new SQL ($host, $username, $password, $baza); // poziva klasu
-$uslov=$db->uslov("id=1"); 	// postavlja uslov
-$test=$db->procitaj("*","test","id"); // cita iz baze uz predhodno postavljen uslov, i na kraju ga ponistava
-$drugi= $db->procitaj("*","test","id"); // cita iz baze bez uslova
+$db = new SQL ($host, $username, $password, $baza); // poziva klasu<br/>
+
+$uslov=$db->uslov("id=1"); 	// postavlja uslov<br/>
+
+$test=$db->procitaj("*","test","id"); // cita iz baze uz predhodno postavljen uslov, i na kraju ga ponistava<br/>
+
+$drugi= $db->procitaj("*","test","id"); // cita iz baze bez uslova<br/><br/>
 
 
-DODAVANJE U BAZU
 
+DODAVANJE U BAZU<br/>
+<code>
 $zaDodavanje=array(
     'id' => NULL,
     'code'=>'trojka',
     'name'=>'TRECE'
 );
 $db->dodaj("test",$zaDodavanje);
-
+</code>
 
 
 IZMENE
