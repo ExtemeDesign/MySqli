@@ -2,9 +2,9 @@
 require_once("class.MySql.php");
 
 	$host       =   "localhost";
-    $username   =   "username";
-    $password   =   "sifra";
-    $baza       =   "dbname";
+    	$username   =   "username";
+    	$password   =   "sifra";
+    	$baza       =   "dbname";
 
 $db = new SQL ($host, $username, $password, $baza);
 
