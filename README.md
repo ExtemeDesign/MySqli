@@ -22,8 +22,8 @@ $db = new SQL ($host, $username, $password, $baza);
 ## Citanje iz baze
 ```php
 $uslov=$db->uslov("id=1"); 	// postavlja uslov
-$test=$db->procitaj("*","test","id"); // cita iz baze uz predhodno postavljen uslov, i na kraju ga ponistava
-$drugi= $db->procitaj("*","test","id"); // cita iz baze bez uslova
+$test=$db->procitaj("*","imekolone","id"); // cita iz baze uz predhodno postavljen uslov, i na kraju ga ponistava
+$drugi= $db->procitaj("*","imekolone","id"); // cita iz baze bez uslova
 ```
 
 ## Dodavanje u bazu
@@ -35,7 +35,7 @@ $zaDodavanje=array(
     'code'=>'trojka',
     'name'=>'TRECE'
 );
-$db->dodaj("test",$zaDodavanje);
+$db->dodaj("imekolone",$zaDodavanje);
 ```
 
 ## Izmena
@@ -46,12 +46,12 @@ $izmena =array(
 	);
 
 $uslov=$db->uslov("id=4"); 
-$db->izmeni("test",$izmena);
+$db->izmeni("imekolone",$izmena);
 ```
 
 ## Brisanje
 ```php
 $uslov=$db->uslov("id=7"); 
-$db->obrisi("test");
+$db->obrisi("imekolone");
 ```
 * To su samo neki od primera, kombinovanjem kodova i uz malo maste moguce je postici sve vezano za komunikaciju sa MySql bazama.
